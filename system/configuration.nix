@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   imports =
@@ -68,8 +68,19 @@
     #media-session.enable = true;
   };
 
+  # Enable KWallet keyring for cosmic
+  # Start vscode in cosmic / niri with: code --password-store=kwallet
+  # security.pam.services.login.kwallet.enable = true;
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
+
+  # Firmware updates
+  # run: fwupdmgr update
+  services.fwupd.enable = true;
+
+  # For fingerprint support
+  services.fprintd.enable = lib.mkDefault true;
 
   users = {
     defaultUserShell = pkgs.zsh; # Make zsh default shell

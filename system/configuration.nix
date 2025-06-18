@@ -149,6 +149,19 @@
     fastfetch
     oh-my-zsh
     gimp3-with-plugins
+    vscode.fhs
+    alacritty
+    mako
+    waybar
+    fuzzel
+  ];
+
+  fonts.packages = with pkgs; [
+    font-awesome
+    inter
+    nerd-fonts.fira-code
+    nerd-fonts.droid-sans-mono
+    nerd-fonts.jetbrains-mono
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

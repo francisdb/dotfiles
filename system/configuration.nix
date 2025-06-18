@@ -154,6 +154,9 @@
     mako
     waybar
     fuzzel
+    btop
+    htop
+    nmap
   ];
 
   fonts.packages = with pkgs; [

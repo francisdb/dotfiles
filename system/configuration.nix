@@ -82,6 +82,20 @@
   # For fingerprint support
   services.fprintd.enable = lib.mkDefault true;
 
+
+  # avahi mdns
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    openFirewall = true;
+    publish = {
+      enable = true;
+      userServices = true;
+      addresses = true;
+    };
+  };
+
+
   users = {
     defaultUserShell = pkgs.zsh; # Make zsh default shell
   };

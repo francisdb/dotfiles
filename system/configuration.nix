@@ -157,6 +157,9 @@
     polkitPolicyOwners = [ "francisdb" ];
   };
 
+  # Ladybird browser
+  programs.ladybird.enable = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -183,7 +186,6 @@
     btop
     htop
     nmap
-    ladybird
   ];
 
   fonts.packages = with pkgs; [

@@ -183,6 +183,7 @@
     btop
     htop
     nmap
+    ladybird
   ];
 
   fonts.packages = with pkgs; [

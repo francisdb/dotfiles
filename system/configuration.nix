@@ -33,6 +33,9 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
+  i18n.extraLocales = [
+    "nl_BE.UTF-8/UTF-8"
+  ];
 
   # Enable the X11 windowing system.
   # You can disable this if you're only using the Wayland session.

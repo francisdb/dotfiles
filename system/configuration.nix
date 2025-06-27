@@ -189,6 +189,7 @@
     btop
     htop
     nmap
+    tree
   ];
 
   fonts.packages = with pkgs; [

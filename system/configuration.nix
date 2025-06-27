@@ -190,6 +190,7 @@
     htop
     nmap
     tree
+    conky
   ];
 
   fonts.packages = with pkgs; [

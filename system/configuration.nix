@@ -191,6 +191,9 @@
     nmap
     tree
     conky
+    killall
+    # for lspci
+    pciutils
   ];
 
   fonts.packages = with pkgs; [

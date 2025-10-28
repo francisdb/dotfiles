@@ -163,6 +163,20 @@
   # Ladybird browser
   programs.ladybird.enable = true;
 
+  # programs.zed-editor = {
+  #   enable = true;
+  #   extensions = [ "nix" "toml" "rust" ];
+  #   userSettings = {
+  #     theme = {
+  #       mode = "system";
+  #       dark = "One Dark";
+  #       light = "One Light";
+  #     };
+  #     hour_format = "hour24";
+  #     vim_mode = false;
+  #   };
+  # };
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -182,6 +196,7 @@
     oh-my-zsh
     gimp3-with-plugins
     vscode.fhs
+    zed-editor
     alacritty
     mako
     waybar
